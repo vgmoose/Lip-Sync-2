@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>463BC6CD-93FC-4B21-AA87-3595BFF0ABB9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Mario Face</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5678AB58-30A3-4A12-AC49-F68AACD4BAE8</key>
+		<string>ssh://github.com/vgmoose/Mario-Face.git</string>
+		<key>EAD752AC-CE86-4C89-8AAE-CF84405ACD80</key>
+		<string>ssh://github.com/vgmoose/Lip-Sync-2.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Mario Face.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5678AB58-30A3-4A12-AC49-F68AACD4BAE8</key>
+		<string>../../../Mario-Face</string>
+		<key>EAD752AC-CE86-4C89-8AAE-CF84405ACD80</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/vgmoose/Lip-Sync-2.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EAD752AC-CE86-4C89-8AAE-CF84405ACD80</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EAD752AC-CE86-4C89-8AAE-CF84405ACD80</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Lip-Sync-2</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5678AB58-30A3-4A12-AC49-F68AACD4BAE8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Mario-Face</string>
+		</dict>
+	</array>
+</dict>
+</plist>
