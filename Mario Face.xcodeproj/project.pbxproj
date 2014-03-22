@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C442ABF18DD7C9400F0BBBB /* mario_closed.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C442ABE18DD7C9400F0BBBB /* mario_closed.png */; };
+		9C442AC118DD843500F0BBBB /* mario_open.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C442AC018DD843500F0BBBB /* mario_open.png */; };
 		9CA64DAD169F142100450C1D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA64DAC169F142100450C1D /* UIKit.framework */; };
 		9CA64DAF169F142100450C1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA64DAE169F142100450C1D /* Foundation.framework */; };
 		9CA64DB1169F142100450C1D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA64DB0169F142100450C1D /* CoreGraphics.framework */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C442ABE18DD7C9400F0BBBB /* mario_closed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mario_closed.png; path = "../Mario-Face/res/drawable/mario_closed.png"; sourceTree = "<group>"; };
+		9C442AC018DD843500F0BBBB /* mario_open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mario_open.png; path = "../Mario-Face/res/drawable/mario_open.png"; sourceTree = "<group>"; };
 		9CA64DA8169F142100450C1D /* Mario Face.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mario Face.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA64DAC169F142100450C1D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9CA64DAE169F142100450C1D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -93,6 +97,8 @@
 		9CA64D9D169F142100450C1D = {
 			isa = PBXGroup;
 			children = (
+				9C442AC018DD843500F0BBBB /* mario_open.png */,
+				9C442ABE18DD7C9400F0BBBB /* mario_closed.png */,
 				9CA64DEC169F196600450C1D /* Mario114.png */,
 				9CA64DEA169F196200450C1D /* Mario57.png */,
 				9CA64DB2169F142100450C1D /* Mario Face */,
@@ -240,9 +246,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C442AC118DD843500F0BBBB /* mario_open.png in Resources */,
 				9CA64DB7169F142100450C1D /* InfoPlist.strings in Resources */,
 				9CA64DBF169F142100450C1D /* Default.png in Resources */,
 				9CA64DC1169F142100450C1D /* Default@2x.png in Resources */,
+				9C442ABF18DD7C9400F0BBBB /* mario_closed.png in Resources */,
 				9CA64DC3169F142100450C1D /* Default-568h@2x.png in Resources */,
 				9CA64DC6169F142100450C1D /* MainStoryboard_iPhone.storyboard in Resources */,
 				9CA64DC9169F142100450C1D /* MainStoryboard_iPad.storyboard in Resources */,
@@ -471,6 +479,7 @@
 				9CA64DE6169F142200450C1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9CA64DE7169F142200450C1D /* Build configuration list for PBXNativeTarget "Mario FaceTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +488,7 @@
 				9CA64DE9169F142200450C1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

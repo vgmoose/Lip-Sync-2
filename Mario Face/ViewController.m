@@ -14,10 +14,25 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    UIButton *imageButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    imageButton.frame = CGRectMake(100.0, 100.0, 57.0, 57.0);
+    [imageButton setImage:[UIImage imageNamed:@"Icon.png"] forState:UIControlStateNormal];
+    [self.view addSubview:imageButton];
+}
+- (IBAction)mario2:(UIButton *)sender
+{
+    [sender setImage:[UIImage imageNamed:@"mario_closed.png"]
+            forState: UIControlStateNormal];
+}
+
+
+- (IBAction)mario:(UIButton *)sender
+{
+    [sender setImage:[UIImage imageNamed:@"mario_open.png"]
+              forState: UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning
