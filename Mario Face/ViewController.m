@@ -16,23 +16,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     UIButton *imageButton = [UIButton buttonWithType:UIButtonTypeCustom];
     imageButton.frame = CGRectMake(100.0, 100.0, 57.0, 57.0);
     [imageButton setImage:[UIImage imageNamed:@"Icon.png"] forState:UIControlStateNormal];
     [self.view addSubview:imageButton];
 }
-- (IBAction)mario2:(UIButton *)sender
+
+- (IBAction)openMouth:(UIButton *)sender
 {
-    [sender setImage:[UIImage imageNamed:@"mario_closed.png"]
-            forState: UIControlStateNormal];
+    NSString* name = [NSString stringWithFormat:@"%@%@", self.title, @"_open.png"];
+    [sender setImage:[UIImage imageNamed:name]
+              forState: UIControlStateNormal];
 }
 
-
-- (IBAction)mario:(UIButton *)sender
+- (IBAction)closeMouth:(UIButton *)sender
 {
-    [sender setImage:[UIImage imageNamed:@"mario_open.png"]
-              forState: UIControlStateNormal];
+    NSString* name = [NSString stringWithFormat:@"%@%@", self.title, @"_closed.png"];
+    [sender setImage:[UIImage imageNamed:name]
+            forState: UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning

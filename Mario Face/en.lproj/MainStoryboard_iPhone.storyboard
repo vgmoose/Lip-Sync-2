@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View Controller - mario-->
         <scene sceneID="5">
             <objects>
-                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="mario" id="2" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zQ4-cm-FkO"/>
                         <viewControllerLayoutGuide type="bottom" id="9mW-a9-9jI"/>
@@ -20,12 +20,14 @@
                             <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59o-BP-Eny">
                                 <rect key="frame" x="44" y="0.0" width="480" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                                 <state key="normal" image="mario_closed.png">
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="mario2:" destination="2" eventType="touchUpInside" id="a0D-1u-hah"/>
-                                    <action selector="mario:" destination="2" eventType="touchDown" id="uVo-wY-ZQ8"/>
+                                    <action selector="closeMouth:" destination="2" eventType="touchUpInside" id="ov3-0s-txT"/>
+                                    <action selector="openMouth:" destination="2" eventType="touchDown" id="EJV-oK-KEN"/>
+                                    <outletCollection property="gestureRecognizers" destination="UJG-2A-8NR" appends="YES" id="XPO-2p-9M5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -36,14 +38,156 @@
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <navigationItem key="navigationItem" id="18e-JS-pAK"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="UJG-2A-8NR">
+                    <connections>
+                        <segue destination="fdb-8P-ik7" kind="modal" id="dGm-ed-NNb"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="-797" y="-464"/>
+        </scene>
+        <!--View Controller - peach-->
+        <scene sceneID="cQP-2l-LQJ">
+            <objects>
+                <viewController title="peach" id="fdb-8P-ik7" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lpH-uj-0B6"/>
+                        <viewControllerLayoutGuide type="bottom" id="hSr-fS-nbY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h0l-KX-kMZ">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwr-e8-saG">
+                                <rect key="frame" x="44" y="0.0" width="480" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <state key="normal" image="peach_closed.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeMouth:" destination="fdb-8P-ik7" eventType="touchUpInside" id="7cK-he-4FM"/>
+                                    <action selector="openMouth:" destination="fdb-8P-ik7" eventType="touchDown" id="FLg-RX-LV8"/>
+                                    <outletCollection property="gestureRecognizers" destination="GGX-XL-Zpz" appends="YES" id="Qzs-WA-nGc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="fwr-e8-saG" secondAttribute="centerX" id="PrM-An-ENY"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="b28-WS-m3m"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bjn-PX-rYZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="GGX-XL-Zpz">
+                    <connections>
+                        <segue destination="gzM-rl-0MB" kind="modal" id="Zyv-f1-RlI"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-55" y="-464"/>
+        </scene>
+        <!--View Controller - goomba-->
+        <scene sceneID="dPd-tc-rrW">
+            <objects>
+                <viewController title="goomba" id="gzM-rl-0MB" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WMQ-Og-aEg"/>
+                        <viewControllerLayoutGuide type="bottom" id="pPZ-XE-fMc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cln-yP-Snx">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJR-Bp-Qst">
+                                <rect key="frame" x="44" y="0.0" width="480" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <state key="normal" image="goomba_closed.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeMouth:" destination="gzM-rl-0MB" eventType="touchUpInside" id="GBb-m9-c88"/>
+                                    <action selector="openMouth:" destination="gzM-rl-0MB" eventType="touchDown" id="5bg-5E-O7l"/>
+                                    <outletCollection property="gestureRecognizers" destination="3Jg-pt-3A0" appends="YES" id="MGt-hA-9e1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="FJR-Bp-Qst" secondAttribute="centerX" id="60y-eU-Jpz"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="EgM-vq-mc5"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HgU-3O-6ev" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="3Jg-pt-3A0">
+                    <connections>
+                        <segue destination="wEH-Q5-X9F" kind="modal" id="0NO-lf-y5k"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-797" y="33"/>
+        </scene>
+        <!--View Controller - boo-->
+        <scene sceneID="CER-Rl-cBD">
+            <objects>
+                <viewController title="boo" id="wEH-Q5-X9F" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x1a-z3-SQO"/>
+                        <viewControllerLayoutGuide type="bottom" id="9m8-Sf-Z24"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m8o-SR-agQ">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJP-a2-dpO">
+                                <rect key="frame" x="44" y="0.0" width="480" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <state key="normal" image="boo_closed.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeMouth:" destination="wEH-Q5-X9F" eventType="touchUpInside" id="kzZ-7z-dHY"/>
+                                    <action selector="openMouth:" destination="wEH-Q5-X9F" eventType="touchDown" id="vrj-yo-hIZ"/>
+                                    <outletCollection property="gestureRecognizers" destination="9QE-gK-0xm" appends="YES" id="qmC-6y-NRU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="fJP-a2-dpO" secondAttribute="centerX" id="Thl-YZ-Wgc"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LrV-1A-V9e"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DsD-k5-DGO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="9QE-gK-0xm">
+                    <connections>
+                        <segue destination="2" kind="modal" id="UmZ-mn-68a"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-55" y="33"/>
         </scene>
     </scenes>
     <resources>
+        <image name="boo_closed.png" width="480" height="320"/>
+        <image name="goomba_closed.png" width="480" height="320"/>
         <image name="mario_closed.png" width="480" height="320"/>
+        <image name="peach_closed.png" width="480" height="320"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
